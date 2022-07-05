@@ -1,0 +1,68 @@
+// Futhark icons
+// -------------
+
+@font-face {
+  font-family: 'Futhark Icons';
+  font-weight: normal;
+  font-style:  normal;
+  src: url('~@static/fonts/Futhark/futhark-icons.woff') format('woff');
+}
+
+// Lato
+// ----
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style:  normal;
+  src: url('~@static/fonts/Lato/Lato-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-style:  normal;
+  src: url('~@static/fonts/Lato/Lato-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style:  italic;
+  src: url('~@static/fonts/Lato/Lato-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-style:  italic;
+  src: url('~@static/fonts/Lato/Lato-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 200;
+  font-style:  normal;
+  src: url('~@static/fonts/Lato/Lato-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 200;
+  font-style:  italic;
+  src: url('~@static/fonts/Lato/Lato-LightItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style:  normal;
+  src: url('~@static/fonts/Lato/Lato-Hairline.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style:  italic;
+  src: url('~@static/fonts/Lato/Lato-HairlineItalic.woff2') format('woff2');
+}

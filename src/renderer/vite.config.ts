@@ -1,25 +1,29 @@
 import { join } from 'path'
 import { builtinModules } from 'module'
 import { defineConfig, Plugin } from 'vite'
-import react from '@vitejs/plugin-react'
+import vue from '@vitejs/plugin-vue'
 import resolve from 'vite-plugin-resolve'
 import pkg from '../../package.json'
 
 export default defineConfig({
   mode: process.env.NODE_ENV,
   root: __dirname,
-  plugins: [
-    react(),
-  ],
+  plugins: [ vue() ],
   base: './',
   build: {
     emptyOutDir: true,
     outDir: '../../dist/renderer'
   },
   resolve: {
+    extensions: [ '.js', '.ts', '.json', '.scss', '.sass', '.vue' ],
     alias: {
       '@': join(__dirname, 'src'),
-      'src': join(__dirname, '../../src')
+      '@root': join(__dirname, '../../src'),
+      '@components': join(__dirname, 'src/components'),
+      '@containers': join(__dirname, 'src/containers'),
+      '@store': join(__dirname, 'src/store'),
+      '@styles': join(__dirname, 'src/styles'),
+      '@utils': join(__dirname, 'src/utils'),
     }
   },
   server: {
